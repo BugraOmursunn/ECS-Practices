@@ -8,7 +8,23 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+[Uu]ser[Ss]ettings/
+
+/ECS-Practice-1/[Ll]ibrary/
+/ECS-Practice-1/[Pp]rojectsettings
+
+/ECS-Practice-2/[Ll]ibrary/
+/ECS-Practice-2/[Pp]rojectsettings
+
+/ECS-Practice-3/[Ll]ibrary/
+/ECS-Practice-3/[Pp]rojectsettings
+
+/ECS-Practice-4/[Ll]ibrary/
+/ECS-Practice-4/[Pp]rojectsettings
+
+/ECS-Practice-5/[Ll]ibrary/
+/ECS-Practice-5/[Pp]rojectsettings
+
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
