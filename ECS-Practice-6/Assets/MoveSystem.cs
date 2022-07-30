@@ -11,7 +11,7 @@ public class MoveSystem : JobComponentSystem
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
         float deltaTime = Time.DeltaTime;
-        float speed = 10.0f;
+        float speed = 20.0f;
         float3 targetLocation = new float3(0, 0, 0);
         var jobHandle = Entities
                .WithName("MoveSystem")
@@ -19,7 +19,7 @@ public class MoveSystem : JobComponentSystem
                {
                    float3 pivot = targetLocation;
                    float rotSpeed = deltaTime * speed * 1 / math.distance(position.Value, pivot);
-                   position.Value = math.mul(quaternion.AxisAngle(new float3(0,1,0), rotSpeed),
+                   position.Value = math.mul(quaternion.AxisAngle(new float3(0, 1, 0), rotSpeed),
                                             position.Value - pivot) + pivot;
                })
                .Schedule(inputDeps);
